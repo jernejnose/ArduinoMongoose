@@ -25,6 +25,11 @@
 
 #define MG_VERSION "6.14"
 
+#define MG_ENABLE_SSL 1 // Fix to compile with arduino
+#define MG_SSL_IF 2 // Set to use MG_SSL_IF_MBEDTLS
+#define MG_SSL_IF_MBEDTLS_FREE_CERTS 1
+#define MG_SSL_MBED_DUMMY_RANDOM 1 // Use dummy random, bacause???
+
 /* Local tweaks, applied before any of Mongoose's own headers. */
 #ifdef MG_LOCALS
 #include <mg_locals.h>
